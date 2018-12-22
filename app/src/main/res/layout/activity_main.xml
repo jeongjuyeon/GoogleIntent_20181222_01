@@ -25,6 +25,19 @@
         android:id="@+id/callBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="바로걸기"/>
+        android:text="전화바로걸기"/>
+
+    <EditText
+        android:id="@+id/contentEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="문자 내용을 입력."/>
+
+    <Button
+        android:id="@+id/smsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS 발송"/>
+
 
 </LinearLayout>
