@@ -19,6 +19,7 @@ public class MainActivity extends BaseActivity {
     Button smsBtn;
     Button kakaoMarketLinkBtn;
     Button naverWebLinkBtn;
+    Button tjeitMapBtn;
 
 
     @Override
@@ -93,6 +94,16 @@ public class MainActivity extends BaseActivity {
                 startActivity(intent);
             }
         });
+
+        tjeitMapBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                위도/경도 값을 삽입.
+                Uri uri = Uri.parse("geo:37.568976, 126.989199");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -110,6 +121,7 @@ public class MainActivity extends BaseActivity {
         smsBtn = findViewById(R.id.smsBtn);
         kakaoMarketLinkBtn = findViewById(R.id.kakaoMarketLinkBtn);
         naverWebLinkBtn = findViewById(R.id.naverWebLinkBtn);
+        tjeitMapBtn = findViewById(R.id.tjeitMapBtn);
 
     }
 }
